@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Objects-Array</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+<div class="container">
+<div class="btn">
+  <button id="p1"onclick="person1()">Person1</button>
+  <button id="p1"onclick="person2()">Person2</button>
+  <button id="p1"onclick="person3()">Person3</button>
+  <button id="p1"onclick="person4()">Person4</button>
+  <button id="p1"onclick="person5()">Person5</button>
+</div>
+<div class="box">
+  <div class="person">
+  <p id="name">Name:</p>
+  <p id="job">Job:</p>
+  <p id="salary">Salary:</p>
+  <p id="totalSalary"> Annual Salary:</p>
+  <p id="hobbies"> Hobbies:</p>
+</div>
+   <div class="resultTotal">
+    <p id="name_result">Name result</p>
+    <p id="job_result">Job result</p>
+    <p id="salary_result">Salary result</p>
+    <p id="total_salary">Annual Salary</p>
+    <p id="hobbies_result">hobbies result</p>
+    
+  
+  </div>
+      
+  </div>
+</div>
+
+
+    <script>
+    
+
+     const person = [
+       {
+          name: "Ali Eren ", 
+          job: "Developer", 
+          salary: 5000,
+          hobbies: [ "Football",   "musik",  "travel"], 
+          totalSalary: function() {   
+           return this.salary * 12;
+          }
+          
+        },
+
+        {
+          name: "Mahir Zeybek", 
+          job: "Teacher", 
+          salary: 3500,
+          hobbies: [ "Tennis",   "Musik",  "Travel"],
+          totalSalary: function() {   
+           return this.salary * 12;
+          }
+          
+          
+        },   
+        {
+          name: "John Simith", 
+          job: "Engineer", 
+          salary: 8000,
+          hobbies: [ "Theatre",   "musik",  "Travel"],
+          totalSalary: function() {   
+           return this.salary * 12;
+          }
+          
+        },   
+        {
+        
+          name: "julia Braun", 
+          job: "Chef", 
+          salary: 5500,
+          totalSalarym : totalSalaryw = this.salary * 12,
+          hobbies: [ "Reading",   "Cinema",  "Travel"],
+          totalSalary: function() {   
+           return this.salary * 12;
+          
+          }
+          
+          
+        },    
+        {
+          name: "Deniz Ersoy", 
+          job: "Doctor", 
+          salary: 7000,
+          hobbies: [ "Basketball",   "Musik",  "Travel"],
+          totalSalary: function() {   
+          return this.salary * 12;
+          
+          }
+          
+        }
+       ]     
+      
+       nameresult = document.getElementById("name_result");
+       jobesult = document.getElementById("job_result");
+       salaryresult = document.getElementById("salary_result");
+       total_salary = document.getElementById("total_salary");
+       hobbiesresult = document.getElementById("hobbies_result");
+
+      for(i = 0; i < person.length; i++){
+        person[i];
+        
+       console.log(person[i])
+      }
+     
+      function person1(){  
+
+nameresult.innerHTML=person[i,0].name;
+jobesult.innerHTML=person[i,0].job;
+salaryresult.innerHTML=person[i,0].salary;
+hobbiesresult.innerHTML=person[i,0].hobbies;
+total_salary.innerHTML=person[i,0].totalSalary();
+}
+function person2(){  
+
+nameresult.innerHTML=person[i,1].name;
+jobesult.innerHTML=person[i,1].job;
+salaryresult.innerHTML=person[i,1].salary;
+hobbiesresult.innerHTML=person[i,1].hobbies;
+total_salary.innerHTML=person[i,1].totalSalary();
+}
+   
+function person3(){  
+
+nameresult.innerHTML=person[i,2].name;
+jobesult.innerHTML=person[i,2].job;
+salaryresult.innerHTML=person[i,2].salary;
+hobbiesresult.innerHTML=person[i,2].hobbies;
+total_salary.innerHTML=person[i,2].totalSalary();
+}
+   
+function person4(){  
+
+nameresult.innerHTML=person[i,3].name;
+jobesult.innerHTML=person[i,3].job;
+salaryresult.innerHTML=person[i,3].salary;
+hobbiesresult.innerHTML=person[i,3].hobbies;
+total_salary.innerHTML=person[i,3].totalSalary();
+}
+function person5(){  
+
+nameresult.innerHTML=person[i,4].name;
+jobesult.innerHTML=person[i,4].job;
+salaryresult.innerHTML=person[i,4].salary;
+hobbiesresult.innerHTML=person[i,4].hobbies;
+total_salary.innerHTML=person[i,4].totalSalary();
+
+}
+
+
+
+   
+   
+   
+        
+ 
+      
+      
+      
+
+
+
+         </script>
+  </body>
+</html>
+
+ 
+      
+
+      
